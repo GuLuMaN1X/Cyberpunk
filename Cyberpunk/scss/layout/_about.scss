@@ -1,0 +1,162 @@
+.about {
+    margin-bottom: 70px;
+
+    .about_container {
+        width: 100%;
+        max-width: 1280px;
+        margin: -15px 100px;
+
+        .about_images {
+            display: flex;
+            margin-top: 70px;
+            gap: 32px;
+
+            .about_left {
+                .about_item2 {
+                    margin-top: 32px;
+                }
+            }
+        }
+
+        .about_descr {
+            width: 100%;
+            max-width: 952px;
+            margin-top: 25px;
+            color: $clr-border;
+            font-size: $font-size-m;
+            line-height: $font-size-x;
+            font-weight: 700;
+
+            .span_descr {
+                color: $clr-primary-light-blue;
+            }
+        }
+
+        .about_title {
+            font-family: $family-lilita;
+            font-size: $font-size-xl ;
+            font-weight: 400;
+            line-height: $font-size-xl;
+            color: $clr-primary-black;
+        }
+    }
+}
+
+@media (max-width: 1400px) and (min-width:1023px) {
+    .about {
+        margin-bottom: 70px;
+
+        .about_container {
+            width: 100%;
+            max-width: 952px;
+            margin: -15px 36px;
+
+            .about_images {
+                max-width: 900px;
+                display: flex;
+                flex-direction: column;
+                margin-top: 70px;
+                gap: 32px;
+
+                .about_item3 {
+                    width: 100%;
+                    max-width: 852px;
+                }
+
+                .about_left {
+                    .about_item1 {
+                        max-width: 360px;
+                    }
+
+                    .about_item2 {
+                        margin-left: 32px;
+                        max-width: 360px;
+                    }
+                }
+            }
+
+            .about_descr {
+                width: 100%;
+                max-width: 852px;
+                margin-top: 25px;
+                color: $clr-border;
+                font-size: $font-size-m;
+                line-height: $font-size-x;
+                font-weight: 700;
+
+                .span_descr {
+                    color: $clr-primary-light-blue;
+                }
+            }
+
+            .about_title {
+                width: 100%;
+                max-width: 620px;
+                font-family: $family-lilita;
+                font-size: $font-size-xl ;
+                font-weight: 400;
+                line-height: $font-size-xl;
+                color: $clr-primary-black;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .about {
+        margin-bottom: 70px;
+
+        .about_container {
+            width: 100%;
+            max-width: 1100px;
+            margin: -15px 12px;
+
+            .about_images {
+                max-width: 1000px;
+                display: flex;
+                flex-direction: column;
+                margin-top: 70px;
+                gap: 32px;
+
+                .about_item3 {
+                    width: 100%;
+                    max-width: 320px;
+                }
+
+                .about_left {
+                    .about_item1 {
+                        max-width: 320px;
+                    }
+
+                    .about_item2 {
+                        max-width: 320px;
+                    }
+                }
+            }
+
+            .about_descr {
+                width: 100%;
+                max-width: 296px;
+                margin-top: 25px;
+                color: $clr-border;
+                font-size: $font-size-m;
+                line-height: $font-size-x;
+                font-weight: 700;
+
+                .span_descr {
+                    color: $clr-primary-light-blue;
+                }
+            }
+
+            .about_title {
+                width: 100%;
+                max-width: 290px;
+                font-family: $family-lilita;
+                font-size: $font-size-x;
+                font-weight: 400;
+                line-height: $font-size-x;
+                color: $clr-primary-black;
+            }
+        }
+    }
+}

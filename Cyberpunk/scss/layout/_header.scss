@@ -1,0 +1,116 @@
+.header {
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    .header_container {
+        margin-top: $margin-xsmall;
+    }
+
+    .container {
+        @include flex-row;
+
+        .social-list {
+            @include flex-row;
+            gap: $margin-regular;
+        }
+
+        .header_logo {
+            width: 100%;
+            max-width: 296px;
+        }
+    }
+}
+
+@media (max-width: 1400px) and (min-width:1023px) {
+    .header {
+        z-index: 99;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        max-width: 952px;
+        margin: 0 $margin-medium 0 $margin-medium;
+
+        .header_container {
+            margin-top: $margin-xsmall;
+        }
+
+        .container {
+            @include flex-row;
+
+            .social-list {
+                @include flex-row;
+                gap: $margin-regular;
+            }
+
+            .header_logo {
+                width: 100%;
+                max-width: 296px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) and (min-width:320px) {
+    .header {
+        z-index: 99;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        max-width: 296px;
+        margin: 0 $margin-medium 0 $margin-medium;
+
+        .header_container {
+            margin-left: 300px;
+            margin-top: $margin-xsmall;
+        }
+
+        .container {
+            @include flex-column-center;
+            gap: $margin-xsmall;
+
+            .social-list {
+                @include flex-row;
+                gap: $margin-regular;
+            }
+
+            .header_logo {
+                width: 100%;
+                max-width: 296px;
+            }
+        }
+    }
+}
+@media (max-width:320px) {
+    .header {
+        z-index: 99;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        max-width: 296px;
+
+        .header_container {
+            margin-top: $margin-xsmall;
+        }
+
+        .container {
+            @include flex-column-center;
+            gap: $margin-xsmall;
+
+            .social-list {
+                @include flex-row;
+                gap: $margin-xsmall;
+            }
+
+            .header_logo {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+    }
+}
